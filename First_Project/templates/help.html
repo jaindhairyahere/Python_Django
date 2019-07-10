@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+<head>
+    <title>Help Page</title>
+    <link rel="stylesheet" href="{% static 'css/mystyle.css' %}">
+</head>
+<body>
+    <h1>Hello World </h1>
+    {{help_insert}}
+    <br><br>
+    NOw Image insertion by static in image
+    <img src="{% static 'images/sarc.jpg' %}" alt="">
+</body>
+</html>
