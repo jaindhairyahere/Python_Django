@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Register Here</title>
+  </head>
+  <body>
+    <h1>Welcome !! </h1>
+    <h2>You can register by clicking here.</h2>
+    <a href="{% url 'basicapp:index' %}">HomePage</a>
+    <form method="POST">
+      {{ form.as_p }}
+      {% csrf_token %}
+      <input type="submit" name="" value="Submit" >
+      </form>
+      <a href="{% url 'admin:index' %}">Admin</a>
+  </body>
+</html>
