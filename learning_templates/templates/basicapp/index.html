@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+{% load staticfiles %}
+<html>
+<head>
+	<title>Alumination</title>
+	<link rel="stylesheet" type="text/css" href="{% static "css/styles.css" %}">
+</head>
+<body>
+	<header>
+		<ul class="navigation">
+		  <input id="radio1" type="radio" name="navbar" checked>
+		  <li class="navItem">
+		    <label for="radio1" class="navLabel">home</label>
+		  </li>
+		  <input id="radio2" type="radio" name="navbar">
+		  <li class="navItem">
+		    <label for="radio2" class="navLabel">about</label>
+		  </li>
+		  <input id="radio3" type="radio" name="navbar">
+		  <li class="navItem">
+		    <label for="radio3" class="navLabel">contact</label>
+		  </li>
+		</ul>
+	</header>
+	<main>
+		<h1 class="main-heading">
+    		<span class="main-heading-primary">Alumination</span>
+   			<span class="main-heading-secondary">you just got lit!</span>
+  		</h1>
+	  <input type="checkbox" id="myInput">
+	  <label for="myInput" id="hamburger">
+	      <span class="bar top"></span>
+	      <span class="bar middle"></span>
+	      <span class="bar bottom"></span>
+	    </label>
+	  <aside>
+	    <div class="aside-section aside-left">
+	      <div class="aside-content">
+	        <p> SARC Home Page </p>
+	        <button class="button"> Home </button>
+	      </div>
+	    </div>
+	    <div class="aside-section aside-right">
+	      <ul class="aside-list">
+	        <li><a href="" class="aside-anchor">Events</a></li>
+	        <li><a href="" class="aside-anchor">About</a></li>
+	        <li><a href="" class="aside-anchor">Contacts</a></li>
+					<li><a href="register" class="aside-anchor">Register</a></li>
+
+	      </ul>
+	    </div>
+	  </aside>
+	</main>
+</body>
+</html>
