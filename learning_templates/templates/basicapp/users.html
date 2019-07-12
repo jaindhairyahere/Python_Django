@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+
+{% extends "basicapp/base.html" %}
+{% load myfilter %}
+  {% block my_block %}
+    {% if users %}
+      <ol>
+        {% for person,i in users, range(10) %}
+          <li>User Info</li>
+            <ul>
+              <li>Name : {{ person.name }}</li>
+              <li>Product : {{ person.product_name }}</li>
+              <li>Price: {{ person.price }}</li>
+              <li>Cost : {{ person.price|cost:(i+1) }}</li>
+            </ul>
+        {% endfor %}
+      </ol>
+    {% endif %}
+  {% endblock %}
