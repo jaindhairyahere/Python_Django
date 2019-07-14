@@ -10,7 +10,8 @@
     <h2>You can register by clicking here.</h2>
     <a href="{% url 'basicapp:index' %}">HomePage</a>
     <form method="POST">
-      {{ form.as_p }}
+      {{ user_form.as_p }}
+      {{ profile_form.as_p }}
       {% csrf_token %}
       <input type="submit" name="" value="Submit" >
       </form>

@@ -1,7 +1,14 @@
 from django import forms
-from .models import user
+from .models import customer
+from django.contrib.auth.models import User
+from .models import UserProfileInfo
 
-class RegForm(forms.ModelForm):
+class UserForm(forms.ModelForm):
+	password = forms.CharField(widget=forms.PasswordInput())
 	class Meta():
-		model = user
-		fields = '__all__'
+		model = User
+		exclude = '__all__'
+class UserProfileForm(forms.ModelForm):
+	class Meta():
+		model = UserProfileInfo
+		fields = ('portfolio','picture')
