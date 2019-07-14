@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% block myblock %}
+  {% if registered %}
+    <h2>Successfully Registered</h2>
+  {% else %}
+
+    <form method="post" enctype="multipart/form-data">
+      {% csrf_token %}
+      {{ user_form.as_p }} <hr>
+      {{ alumni_form.as_p }}
+      <input type="submit" name="" value="SignUp">
+    </form>
+  {% endif %}
+{% endblock %}
