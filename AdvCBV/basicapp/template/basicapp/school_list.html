@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block myblock %}
+
+  <h1>Welcome to School List</h1>
+  <ol>
+    {% for school in schools %}
+      <h2> <li> {{ school.name }} </li> </h2>
+    {% endfor %}
+  </ol>
+{% endblock %}

@@ -1,0 +1,21 @@
+{% extends 'base.html' %}
+
+{% block myblock %}
+
+  <h1>Welcome to School Details</h1>
+
+    <h2>School details :: </h2>
+    <p>Name : {{ school_detail.name }}</p>
+    <p>Principal : {{ school_detail.principal }}</p>
+    <p>Location : {{ school_detail.location }}</p>
+    <h3>Students :</h3>
+    {% for student in school_detail.students.all %}
+      <p> {{ student.name }} who is {{ student.age }} years old.</p>
+    {% endfor %}
+
+<div class="container">
+    <p> <a class="btn btn-warning" href="{% url 'basicapp:updateview' pk=school_detail.pk  %}">Update</a> 
+  <a class="btn btn-danger" href="{% url 'basicapp:deleteview' pk=school_detail.pk  %}">Delete</a> </p>
+</div>
+
+{% endblock %}
