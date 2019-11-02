@@ -1,0 +1,15 @@
+{% extends "LearningViews/base.html" %}
+{% block myblock %}
+  <form class="" method="post">
+    {% csrf_token %}
+<!--    {{ form.as_p }}-->
+    {% for field in form %}
+      <div class="field">
+        <label for="{{ field.id.for_label }}" class="label">
+          {{ field.html_name }}
+        </label>  {{ field }}
+      </div>
+    {% endfor %}
+    <input type="submit" name="" value="Create Student">
+  </form>
+{% endblock %}

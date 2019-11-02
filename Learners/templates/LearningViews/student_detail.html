@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+{% extends "LearningViews/base.html" %}
+
+{% block myblock %}
+    <ul>
+      <li>Name: {{ object.name }} </li>
+      <li>Age: {{ object.age }}</li>
+      <li>Email: {{ object.email }}</li>
+      <li>Created By: {{ object.created_by }}</li>
+      <li> <a href="{% url 'deleteview' pk=object.pk %}">Delete {{ object.name }}</a> </li>
+      <li> <a href="{% url 'updateview' pk=object.pk %}">Update {{ object.name }}</a> </li>
+    </ul>
+
+{% endblock %}

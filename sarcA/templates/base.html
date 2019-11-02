@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+{% block head %}
+    <meta charset="UTF-8">
+	<title>Alumination Home</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/style_home.css' %}">
+	<style>canvas {
+			position: absolute;
+			top: 45%;
+			left: 45%;
+			background-color: #0A0C0D;
+			border-radius: 100%;
+		  }</style>
+{% endblock %}
+</head>
+<body>
+
+	{% block Content %}
+	<canvas id="canvas" width="200" height ="200"></canvas>
+    <header class="content">
+		<ul class="navigation">
+		  <input id="radio1" type="radio" name="navbar" checked>
+		  <li class="navItem">
+		    <label for="radio1" class="navLabel">home</label>
+		  </li>
+		  <input id="radio2" type="radio" name="navbar">
+		  <li class="navItem">
+		    <label for="radio2" class="navLabel">about</label>
+		  </li>
+		  <input id="radio3" type="radio" name="navbar">
+		  <li class="navItem">
+		    <label for="radio3" class="navLabel">contact</label>
+		  </li>
+		</ul>
+	</header>
+	<main class="content">
+		<h1 class="main-heading">
+    		<span class="main-heading-primary">Alumination</span>
+   			<span class="main-heading-secondary">you just got lit!</span>
+  		</h1>
+	  <input type="checkbox" id="myInput">
+	  <label for="myInput" id="hamburger">
+	      <span class="bar top"></span>
+	      <span class="bar middle"></span>
+	      <span class="bar bottom"></span>
+	    </label>
+	  <aside>
+	    <div class="aside-section aside-left">
+	      <div class="aside-content">
+	        <p> SARC Home Page </p>
+	        <button class="button"> Home </button>
+	      </div>
+	    </div>
+	    <div class="aside-section aside-right">
+	      <ul class="aside-list">
+	        <li><a href="{% url 'events' %}" class="aside-anchor">Events</a></li>
+	        <li><a href="" class="aside-anchor">About</a></li>
+            <li><a href="{% url 'register'  %}" class="aside-anchor">Register</a></li>
+	        <li><a href="" class="aside-anchor">Contacts</a></li>
+	      </ul>
+	    </div>
+	  </aside>
+	</main>
+	{% endblock  %}
+{% block scripts %}
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+
+<script>
+		 
+		 const canvas = document.getElementById("canvas")
+		 const context = canvas.getContext('2d')
+ 
+		 const radius = canvas.width / 3
+		 const angleStep = Math.PI * 2 / 360
+		 let theta = 0
+   
+		 //change frequencies for getting various curves
+		 const frequencyX = 5
+		 const frequencyY = 5
+ 
+		 window.requestAnimationFrame(draw)
+ 
+		 function draw () {
+			  context.setTransform(1, 0, 0, 1, 0, 0);
+		   context.clearRect(0, 0, canvas.width, canvas.height)
+   
+		   context.setTransform(1, 0, 0, 1, canvas.width / 2, canvas.height / 2);
+		   context.beginPath();
+
+		   for (let angle = 0; angle < Math.PI * 2; angle += angleStep ) {
+				 const x = Math.sin(angle * frequencyX + theta) * Math.cos(angle + theta) * radius;
+				 const y = Math.cos(angle * frequencyY) * Math.sin(angle + theta) * radius;
+				 if(angle === 0) {
+				   context.moveTo(x, y)
+				 } else {
+				   context.lineTo(x, y)   
+				 }
+		   }
+		   context.lineWidth = 4
+		   context.strokeStyle = '#ffffff'
+		   context.stroke()
+		   context.miterLimit = .1;
+		   context.closePath() 
+		   theta += 0.04
+		   window.requestAnimationFrame(draw);
+		 }
+   
+
+	$(window).load( $("canvas").fadeOut('slow') );
+
+
+</script>
+{% endblock %}
+</body>
+</html>

@@ -1,0 +1,100 @@
+<!doctype html>
+{% extends "base.html" %}
+{% load static %}
+<head>
+	{% block head %}
+		<link rel="stylesheet" href="{% static 'css/reset_reg.css' %}"> <!-- CSS reset -->
+		<link rel="stylesheet" href="{% static 'css/style_reg.css' %}"> <!-- Gem style -->
+		<script src="{% static 'js/modernizr_reg.js' %}"></script> <!-- Modernizr -->
+	<title>Registrations</title>
+	{% endblock head %}
+	
+</head>
+	{% block Content %}
+	<main>
+		<section id="cd-team" class="cd-section">
+			<div class="cd-container">
+				<h1>Registrations</h1>
+				<ul>
+					<li>
+						<a href="" data-type="member-1" id="1">
+							<figure>
+								<img src="{% static 'img/speedmentoring.svg' %}" alt="Team member 1" height="-=14px">
+								<div class="cd-img-overlay"><span>Register</span></div>
+							</figure>
+
+							<div class="cd-member-info">
+								Speed Mentoring
+							</div> <!-- cd-member-info -->
+						</a>
+					</li>
+
+					<li>
+						<a href="" data-type="member-2" id="2">
+							<figure>
+								<img src="{% static 'img/workshops.svg' %}" alt="WorkShops">
+								<div class="cd-img-overlay"><span>Register</span></div>
+							</figure>
+
+							<div class="cd-member-info">
+								Workshops
+							</div> <!-- cd-member-info -->
+						</a>
+					</li>
+
+					<li>
+						<a href="" data-type="member-3" id="3">
+							<figure>
+								<img src="{% static 'img/migd.svg' %}" alt="Team member 1">
+								<div class="cd-img-overlay"><span>Register</span></div>
+							</figure>
+
+							<div class="cd-member-info">
+								MI & GD
+						</a>
+					</li>
+				</ul>
+			</div> <!-- cd-container -->
+		</div> <!-- cd-member-info -->
+		</section> <!-- cd-team -->
+
+		<div class="cd-overlay"></div>
+	</main>
+
+	<div class="cd-member-bio member-1">
+		<form action="" method="post">
+			{% csrf_token %}
+			{% for field in workshop_form %}
+				<label for="{{ field.id }}"> {{ field.name }} : {{ field }} <br> </label>
+			{% endfor %}
+			<button type="submit">Register!</button>
+		</form>
+	</div> <!-- cd-member-bio -->
+
+
+	<div class="cd-member-bio member-2">
+		<form action="" method="post">
+			{% csrf_token %}
+			{% for field in speed_form %}
+				<label for="{{ field.id }}"> {{ field.name }} : {{ field }} <br> </label>
+			{% endfor %}
+			<button type="submit">Register!</button>
+		</form>
+	</div>
+
+
+	<div class="cd-member-bio member-3">
+		<form action="" method="post">
+			{% csrf_token %}
+			{% for field in migd_form %}
+				<label for="{{ field.id }}"> {{ field.name }} : {{ field }} <br> </label>
+			{% endfor %}
+			<button type="submit">Register!</button>
+		</form>
+	</div>
+	
+	
+	<a href="#0" class="cd-member-bio-close">Close</a> <!-- close the author bio section -->
+	<script src="{% static 'js/jquery-3.4.1.js' %}"></script>
+	<script src="{% static 'js/main_reg.js' %}"></script>
+	{% endblock %}

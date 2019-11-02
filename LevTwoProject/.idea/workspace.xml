@@ -2,98 +2,46 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="155e34dc-adba-4875-8899-64becd213d38" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/appTwo/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/appTwo/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/appTwo/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/appTwo/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/template/appTwo/users.html" beforeDir="false" afterPath="$PROJECT_DIR$/template/appTwo/users.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Learners/Learners/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Learners/Learners/settings.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Learners/Learners/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Learners/Learners/wsgi.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Learners/LearningViews/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Learners/LearningViews/admin.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Learners/LearningViews/apps.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Learners/LearningViews/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Learners/LearningViews/migrations/0001_initial.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Learners/LearningViews/migrations/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Learners/LearningViews/models.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Learners/LearningViews/tests.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Learners/LearningViews/urls.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Learners/LearningViews/views.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Learners/db.sqlite3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Learners/manage.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Learners/templates/LearningViews/base.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Learners/templates/LearningViews/myform.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Learners/templates/LearningViews/student_confirm_delete.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Learners/templates/LearningViews/student_detail.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Learners/templates/LearningViews/student_form.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Learners/templates/LearningViews/student_list.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../Learners/templates/registration/login.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SchoolManagement/StaffSection/forms.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../SchoolManagement/StaffSection/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BlogClone/Blog/templates/Blog/post_detail.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BlogClone/Blog/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../BlogClone/Blog/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BlogClone/Blog/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/../BlogClone/Blog/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BlogClone/BlogClone/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/../BlogClone/BlogClone/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../BlogClone/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/../BlogClone/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Login/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/../Login/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../learning_templates/basicapp/forms.py" beforeDir="false" afterPath="$PROJECT_DIR$/../learning_templates/basicapp/forms.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LevTwoProject/settings.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1918">
-              <caret line="22" column="45" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/appTwo/form.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="172">
-              <caret line="11" column="22" lean-forward="true" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-              <folding>
-                <element signature="e#0#24#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/appTwo/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="184">
-              <caret line="8" selection-start-line="8" selection-end-line="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/appTwo/views.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="943">
-              <caret line="41" column="60" lean-forward="true" selection-start-line="41" selection-start-column="60" selection-end-line="41" selection-end-column="60" />
-              <folding>
-                <element signature="e#0#35#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/appTwo/admin.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
-              <folding>
-                <element signature="e#0#32#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/LevTwoProject/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="483">
-              <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
-              <folding>
-                <element signature="e#637#669#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/appTwo/urls.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="92">
-              <caret line="4" column="47" selection-start-line="4" selection-start-column="47" selection-end-line="4" selection-end-column="47" />
-              <folding>
-                <element signature="e#0#28#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -105,47 +53,14 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/LevTwoProject/settings.py" />
-        <option value="$PROJECT_DIR$/appTwo/models.py" />
-        <option value="$PROJECT_DIR$/template/appTwo/index.html" />
-        <option value="$PROJECT_DIR$/appTwo/forms.py" />
-        <option value="$PROJECT_DIR$/LevTwoProject/urls.py" />
-        <option value="$PROJECT_DIR$/appTwo/form.py" />
-        <option value="$PROJECT_DIR$/appTwo/urls.py" />
-        <option value="$PROJECT_DIR$/appTwo/views.py" />
-        <option value="$PROJECT_DIR$/appTwo/admin.py" />
-      </list>
-    </option>
-  </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="253" />
     <option name="y" value="27" />
     <option name="width" value="1400" />
     <option name="height" value="1000" />
   </component>
+  <component name="ProjectId" id="1QF2hyHvEMhwZFwMFeqQZT3ePNw" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="LevTwoProject" type="b2602c69:ProjectViewProjectNode" />
-              <item name="External Libraries" type="cb654da1:ExternalLibrariesNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Course" />
-    </panes>
-  </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../learning_templates" />
@@ -237,118 +152,17 @@
   <component name="SvnConfiguration">
     <configuration />
   </component>
-  <component name="ToolWindowManager">
-    <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.24972677" />
-      <window_info id="Structure" order="1" weight="0.25" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.32914045" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Educational.CheckDetails" order="8" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.32914045" />
-      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
-      <window_info anchor="bottom" id="Python Console" order="11" weight="0.32914045" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/static/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="48" selection-start-line="4" selection-start-column="48" selection-end-line="4" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/manage.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="138">
-          <caret line="7" column="41" lean-forward="true" selection-start-line="7" selection-start-column="41" selection-end-line="7" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/appTwo/forms.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LevTwoProject/settings.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1918">
-          <caret line="22" column="45" selection-start-line="22" selection-start-column="45" selection-end-line="22" selection-end-column="45" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/appTwo/__init__.py">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template/appTwo/users.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/template/appTwo/index.html">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/appTwo/form.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="172">
-          <caret line="11" column="22" lean-forward="true" selection-start-line="11" selection-start-column="22" selection-end-line="11" selection-end-column="22" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/appTwo/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="8" selection-start-line="8" selection-end-line="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/appTwo/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="943">
-          <caret line="41" column="60" lean-forward="true" selection-start-line="41" selection-start-column="60" selection-end-line="41" selection-end-column="60" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/LevTwoProject/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="483">
-          <caret line="21" column="16" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
-          <folding>
-            <element signature="e#637#669#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/appTwo/urls.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="47" selection-start-line="4" selection-start-column="47" selection-end-line="4" selection-end-column="47" />
-          <folding>
-            <element signature="e#0#28#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/appTwo/admin.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="92">
-          <caret line="4" column="25" selection-start-line="4" selection-start-column="25" selection-end-line="4" selection-end-column="25" />
-          <folding>
-            <element signature="e#0#32#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

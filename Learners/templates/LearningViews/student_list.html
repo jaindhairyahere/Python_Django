@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+{% extends "LearningViews/base.html" %}
+
+{% block myblock %}
+<ol>
+  {% for student in object_list %}
+      <li><a href="{% url 'student-detail' pk=student.pk %}">Student : {{ student }}</a> </li>
+  {% endfor %}
+<a href="{% url 'createview' %}">Add New Student</a>
+</ol>
+<p>This is student_list.html</p>
+{% endblock %}

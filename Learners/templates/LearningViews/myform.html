@@ -1,0 +1,17 @@
+{% extends "LearningViews/base.html" %}
+{% block myblock %}
+
+{% if form.errors %}
+  <h3>Didn't Work</h3>
+{% endif %}
+  <form class="" action="{% url 'login' %}" method="POST">
+    {% csrf_token %}
+    {% for field in form %}
+      <div class="field">
+        <label for="{{ field.id.for_label }}" class="label">
+          {{ field.html_name }}
+        </label>  {{ field }}
+      </div>
+    {% endfor %}
+  </form>
+{% endblock %}

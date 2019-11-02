@@ -23,7 +23,7 @@ class PostDetailView(DetailView):
 
 class PostCreateView(LoginRequiredMixin,CreateView):
 	login_url = '/login/'
-	redirect_field_name = 'Blog/post_detail.html'
+	redirect_field_name = 'Blog/post-detail.html'
 
 	form_class = PostForm
 	model = Post
@@ -31,19 +31,19 @@ class PostCreateView(LoginRequiredMixin,CreateView):
 class PostUpdateView(LoginRequiredMixin,UpdateView):
 	model = Post
 	login_url = '/login/'
-	redirect_field_name = 'Blog/post_detail.html'
+	redirect_field_name = 'Blog/post-detail.html'
 	form_class = PostForm
 
 class PostDeleteView(LoginRequiredMixin,DeleteView):
 	model = Post
 	success_url = reverse_lazy('post_list')
 	login_url = '/login/'
-	redirect_field_name = 'Blog/post_detail.html'
+	redirect_field_name = 'Blog/post-detail.html'
 	form_class = PostForm
 
 class DraftListView(LoginRequiredMixin,ListView):
 	login_url = '/login/'
-	redirect_field_name = 'Blog/post_detail.html'
+	redirect_field_name = 'Blog/post-detail.html'
 	form_class = PostForm
 
 	def get_queryset(self):
@@ -60,7 +60,7 @@ def add_comment_to_post(request,pk):
 			comment = form.save(commit=False)
 			comment.post = post
 			comment.save()
-			return redirect('post_detail',pk=post.pk)
+			return redirect('post-detail',pk=post.pk)
 	else:
 		form= CommentForm()
 	return render(request,'Blog/comment_form.html',{'form':form})
@@ -69,17 +69,17 @@ def add_comment_to_post(request,pk):
 def comment_approve(request,pk):
 	comment = get_object_or_404(Comment,pk=pk)
 	comment.approve()
-	return redirect('post_detail',pk=comment.post.pk)
+	return redirect('post-detail',pk=comment.post.pk)
 
 @login_required
 def comment_remove(request,pk):
 	comment = get_object_or_404(Comment,pk=pk)
 	post_pk = comment.post.pk
 	comment.delete()
-	return redirect('post_detail',pk=post_pk)
+	return redirect('post-detail',pk=post_pk)
 
 @login_required
 def post_publish(request,pk):
 	post = get_object_or_404(Post,pk=pk)
 	post.publish()
-	return redirect('post_detail',pk=post.pk)
+	return redirect('post-detail',pk=post.pk)

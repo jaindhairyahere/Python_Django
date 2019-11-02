@@ -9,6 +9,7 @@ class UserForm(forms.ModelForm):
 		model = User
 		exclude = '__all__'
 class UserProfileForm(forms.ModelForm):
+
 	class Meta():
 		model = UserProfileInfo
 		fields = ('portfolio','picture')

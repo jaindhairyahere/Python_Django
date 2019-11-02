@@ -1,0 +1,8 @@
+{% extends "LearningViews/base.html" %}
+{% block myblock %}
+  <form class="" method="post">
+    {% csrf_token %}
+    <h1>Are you sure You want To delete this object?</h1>
+    <input type="submit" name="" value="Delete">
+  </form>
+{% endblock %}
